@@ -1,10 +1,10 @@
 import React from "react";
-import { Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import AboutUs from "./components/AboutUs/AboutUs";
 import HomePage from "./pages/HomePage";
 
 const Routing = () => {
-  const publicPages = [
+  const PUBLIC_ROUTES = [
     {
       link: "/",
       element: <HomePage />,
@@ -19,11 +19,11 @@ const Routing = () => {
     // }
   ];
   return (
-    <>
-      {publicPages.map((item) => (
+    <Routes>
+      {PUBLIC_ROUTES.map((item) => (
         <Route path={item.link} element={item.element} />
       ))}
-    </>
+    </Routes>
   );
 };
 

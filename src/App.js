@@ -4,19 +4,22 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 
 import "./App.css";
+import { Route } from "react-router";
 // import Routing from './Routing';
 
 function App() {
   return (
-    <div>
-      <BrowserRouter>
+    <>
+      {/* <BrowserRouter>
         <Routes>
+          <Route />
           <Header />
-          {/* <Routing /> */}
+          <Routing />
           <Footer />
         </Routes>
-      </BrowserRouter>
-    </div>
+      </BrowserRouter> */}
+      <Header />
+    </>
   );
 }
 
