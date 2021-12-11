@@ -1,8 +1,8 @@
-import { BrowserRouter, Routes } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
-// import Routing from './Routing';
+import HomePage from './pages/Home/HomePage';
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
       <BrowserRouter>
         <Header /> 
           <Routes>
-            {/* <Routing /> */}
+            <Route path='/' element={ <HomePage/> }  />
           </Routes>
         <Footer />
       </BrowserRouter>

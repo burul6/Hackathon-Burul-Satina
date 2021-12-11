@@ -1,0 +1,13 @@
+.main-content{
+    position: relative;
+    background: #fff;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.full-height-slider{
+    height: 100vmin;
+    min-height: 550px;
+    position: relative;
+    width: 100%;
+} 
