@@ -1,8 +1,12 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import './App.css';
+
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import HomePage from './pages/Home/HomePage';
+
+import 'antd/dist/antd.css';
+
+import './App.css';
 
 function App() {
   return (
