@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Corinthia:wght@700&display=swap');
+
 .main-content{
     position: relative;
     background: #fff;
@@ -11,3 +13,224 @@
     position: relative;
     width: 100%;
 } 
+
+.slider-first{
+    width: 1278px;
+    overflow: hidden;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    /* position: relative; */
+}
+
+.slider-first-back{
+    background-image: url("http://unionagency.one/delice/img/home-1/home1_slider_img_1.jpg");
+    transform: translate3d(0%, 0px, 0px);
+    transition-duration: 0ms;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+} 
+
+.slider-table{
+    height: 100%;
+    width: 100%;
+    display: table;
+    margin-top: 50px
+}
+
+.table-cell {
+    height: inherit;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.table-container{
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.table-text{
+    transform: translate3d(0%, 0px, 0px);
+    transition-duration: 0ms;
+    max-width: 850px;
+    margin: 0 auto;
+    display: block;
+    overflow: hidden;
+    padding: 50px 0px 50px 0px;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 80px;
+    border-bottom: 1px solid rgba(255,255,255,0.6);
+    border-left: 1px solid rgba(255,255,255,0.6);
+    border-right: 1px solid rgba(255,255,255,0.6);
+}
+
+.welcome-text{
+    color: #f4a01b;
+    font-size: 110px;
+    line-height: 70px;
+    position: absolute;
+    font-family: 'Corinthia', cursive;
+    margin-left: 60px;
+    margin-left: 270px;
+}
+
+.aboutus-home{
+    background-color: white;
+    margin-top: 0;
+    padding-top: 160px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 100px;
+}
+
+.inner-aboutus{
+    max-width: 1170px;
+    position: relative;
+    padding: 0 15px;
+    max-width: 1530px;
+    margin: 0 auto;
+}
+
+.center-text-home{
+    width: 60%;
+    text-align: center;
+}
+
+.about-us-center{
+    font-size: 95px;
+    font-family: 'Corinthia', cursive;
+    color: #f4a01b;
+    text-align: center;
+}
+
+
+
+.third-homepage-section{
+    height: 700px;
+    background-image: url('http://unionagency.one/delice/img/home-1/section_home1_bg_1.jpg');
+    background-size: 100%;
+    background-color: black;
+}
+
+.inner-third-text{
+    max-width: 850px;
+    margin: 0 auto;
+    display: block;
+    overflow: hidden;
+    padding: 260px 50px 50px 50px;
+}
+
+.inner-third-menu{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+
+}
+
+.our-menu{
+    font-size: 75px;
+    font-family: 'Corinthia', cursive;
+    color: #f4a01b;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+.four-homepage{
+    padding: 100px 70px 50px 70px;
+}
+
+.menu-list{
+    width: 100%;
+     display:flex;
+      justify-content:space-around;
+      margin-top: 60px;
+      text-align:center
+}
+
+.menu-list h4{
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.menu-list h4:hover{
+    color: #f4a01b;
+}
+
+.menu-list-img{
+    width:100%;
+    cursor: pointer;
+}
+
+.menu-list-img:hover{
+    content: "";
+}
+
+.second-back-img{
+    padding: 260px 50px 50px 50px;
+    height: 700px;
+    background-size: 100%;
+    background-image: url("http://unionagency.one/delice/img/home-1/section_home1_bg_2.jpg");
+}
+
+.dishes{
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.best-dishes{
+    font-size: 75px;
+    font-family: 'Corinthia', cursive;
+    color: #f4a01b;
+    text-align: center;
+    font-weight: 700;
+}
+
+.dishes-block{
+    padding: 40px 40px 40px 40px;
+}
+
+.last-homepage-content{
+    width: 100%;
+    padding: 90px 40px 40px 40px;
+}
+
+
+.inner-last-cont{
+    width: 100%;
+    display: flex;
+}
+
+.inner-left-part{
+    width: 50%;
+    text-align: center;
+    margin-right: 50px;
+}
+
+.inner-right-part{
+    width: 50%;
+}
+
+.we-do-it{
+    font-size: 75px;
+    font-family: 'Corinthia', cursive;
+    color: #f4a01b;
+    text-align: center;
+    font-weight: 700;
+}
