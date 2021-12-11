@@ -1,11 +1,11 @@
 import React from 'react';
 
-const AdminPage = () => {
+const MenuList = () => {
     return (
         <div>
-            Admin page
+            MenuList some cards
         </div>
     );
 };
 
-export default AdminPage;
+export default MenuList;

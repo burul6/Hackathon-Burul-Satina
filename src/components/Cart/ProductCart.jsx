@@ -1,11 +1,11 @@
 import React from 'react';
 
-const AdminPage = () => {
+const ProductCart = () => {
     return (
         <div>
-            Admin page
+            Cart 
         </div>
     );
 };
 
-export default AdminPage;
+export default ProductCart;

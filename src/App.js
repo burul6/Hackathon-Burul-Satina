@@ -1,25 +1,24 @@
-import { BrowserRouter, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
-import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
+import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
+import HomePage from './pages/Home/HomePage';
 
-import "./App.css";
-import { Route } from "react-router";
-// import Routing from './Routing';
+import 'antd/dist/antd.css';
+
+import './App.css';
 
 function App() {
   return (
-    <>
-      {/* <BrowserRouter>
-        <Routes>
-          <Route />
-          <Header />
-          <Routing />
-          <Footer />
-        </Routes>
-      </BrowserRouter> */}
-      <Header />
-    </>
+    <div>
+      <BrowserRouter>
+        <Header /> 
+          <Routes>
+            <Route path='/' element={ <HomePage/> }  />
+          </Routes>
+        <Footer />
+      </BrowserRouter>
+    </div>
   );
 }
 
