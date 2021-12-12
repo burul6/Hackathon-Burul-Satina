@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+.menulist-main-content{
+    position: relative;
+    background: #fff;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.menulist-fullheight-slider{
+    max-height: 770px;
+    height: 100vmin;
+    min-height: 550px;
+    position: relative;
+    width: 100%;
+}
+
+.menulist-paralax{
+    background-image: none;
+    background-attachment: scroll;
+    background-size: auto;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    height: 100%
+}
+
+.paralax-container{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    transition: transform 0s linear -1ms, -webkit-transform 0s linear -1ms;
+    visibility: hidden;
+    z-index: -100;
+}
+
+.back-paralax{
+    background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-image: url('http://unionagency.one/delice/img/menu-1/main-baner-bg.jpg');
+    top: 100px;
+    left: 0px;
+    width: 1285px;
+    height: 550px;
+    overflow: hidden;
+    pointer-events: none;
+    transition: transform 0s linear -1ms, -webkit-transform 0s linear -1ms;
+    background-size: 1285px 803.12px;
+    visibility: visible;
+    transform: translate3d(0px, -70px, 0px);
+}
+
+.menulist-table{
+    text-align: center;
+    padding: 135px 60px 60px 60px
+}
+
+.menulist-main-section{
+    background-color: white;
+    position: relative;
+    padding: 0px 50px 50px 50px;
+}
+
+.menu-list-break{
+    width: 100%;
+    display: flex;
+}
+
+.inner-leftpart{
+    width: 40%;
+}
+.inner-rightpart{
+    width: 60%;
+}
+
+.start-the-day{
+    color: #be9a67;
+    font-family: 'Great Vibes', cursive;
+    font-size: 65px;
+    margin-top: -90px;
+}
+
+.breackfast-div{
+    font-weight: 500;
+    color: #4b4b4b;
+    font-size: 45px;
+    margin-bottom: 25px;
+}
+
+.menu-main-title{
+    color: #464646;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.menu-main-title:hover{
+    color: #be9a67;
+    behavior: smooth;
+    border-bottom: 1px solid #be9a67;
+}
+
+.menu-desc{
+    font-size: 16px;
+    line-height: 24px;
+    color: #898989;
+}
+
+.menu-price{
+    color: #be9a67;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.menu-break-item{
+    margin-bottom: 25px;
+}
