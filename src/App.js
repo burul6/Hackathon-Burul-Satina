@@ -7,6 +7,7 @@ import HomePage from './pages/Home/HomePage';
 import 'antd/dist/antd.css';
 
 import './App.css';
+import Services from './pages/Services/Services';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Header /> 
           <Routes>
             <Route path='/' element={ <HomePage/> }  />
+            <Route path='/services' element={ <Services />} />
           </Routes>
         <Footer />
       </BrowserRouter>
