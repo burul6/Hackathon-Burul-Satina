@@ -230,8 +230,6 @@ const MenuList = () => {
                                         <div className='menu-price' style={{marginLeft:"45px"}}>$8.25</div>
                             </div>
                             </div>
-                                   
-                            
                         </div>
                     </div>
                 </div>

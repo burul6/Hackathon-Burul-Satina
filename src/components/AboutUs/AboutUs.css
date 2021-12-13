@@ -1,0 +1,102 @@
+.first-backslider{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    top: 100px;
+    left: 0px;
+    width: 1285px;
+    pointer-events: none;
+    transition: transform 0s linear -1ms, -webkit-transform 0s linear -1ms;
+    background-size: 1285px 803.12px;
+    transform: translate3d(0px, -70px, 0px);
+    height: 550px;
+    background-image: url('http://unionagency.one/delice/img/about/main-baner-bg.jpg');
+}
+
+.duis{
+    color: rgba(255,255,255,0.7);
+    text-align: center;
+    margin-left: -450px;
+    font-size: 19px;
+}
+
+.aboutUs-title{
+    color: white;
+    font-size: 96px;
+    font-weight: 550;
+}
+
+.first-section-text{
+    padding-top: 170px;
+    padding-left: 490px;
+}
+
+.aboutUs-second-section{
+    padding-left: 60px;
+    padding-bottom: 80px;
+    padding-right: 50px;
+}
+
+.twenty-years{
+    font-weight: 700;
+    color: #4b4b4b;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.esse-in{
+    color: #464646;
+    margin-bottom: 20px;
+    line-height: 24px;
+    font-size: 20px;
+}
+
+.lorem-ipsum{
+    color: #898989;
+    margin-bottom: 20px;
+    line-height: 22px;
+}
+.aute-irure{
+    line-height: 22px;
+    color: #898989;
+}
+
+.second-backparalax{
+    position: relative;
+}
+
+.backparalax-div{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('http://unionagency.one/delice/img/about/baner-2-bg.jpg');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    left: 0px;
+    width: 1285px;
+    height: 550px;
+    background-size: 1285px 803.12px;
+}
+
+.text-second-backparalax{
+    padding-top: 70px;
+    background-color: white;
+    width: 800px;
+    height: 400px;
+    margin-left: 210px;
+    margin-right: 280px
+}
+
+.our-customer{
+    color: #be9a67;
+    font-family: 'Great Vibes', cursive;
+    font-size: 55px;
+    margin-top: -90px;
+    padding-top: 80px;
+    text-align: center;
+}
