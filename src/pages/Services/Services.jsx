@@ -16,6 +16,7 @@ const Services = () => {
               "http://unionagency.one/delice/img/services/main-baner-bg.jpg"
             }
             height="650px"
+            
             opacity=".5"
           >
             <h1 style={{ position: "absolute" }}>Our Services</h1>
