@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Great+Vibes&family=Lora:wght@600&display=swap');
+
+h1 {
+    font-size: 106px;
+    line-height: 100px;
+    font-weight: 700;
+    font-family: 'Cormorant Garamond', serif;
+    color: #fff;
+}
+
+p {
+    font-size: 16px;
+    margin-top: 160px;
+    font-weight: 400;
+    font-family: 'Lora', serif;
+    color: rgba(255,255,255,0.7);
+}
+
+.container {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.hero {
+    display: flex;
+    height: auto;
+    margin: 140px auto;
+}
+
+
+/* service 1 */
+.hero__left {
+    width: 50%;
+}
+
+.hero__left h2{
+    margin-top: 75px;
+    font-size: 52px;
+    font-family: 'Great Vibes', cursive;
+    color: #be9a67;
+}
+
+.hero__left h3 {
+    margin-top: -30px;
+    font-size: 45px;
+    font-weight: 700;
+    font-family: 'Cormorant Garamond', serif;
+    color: #4b4b4b;
+}
+
+.hero__left p {
+    margin-top: -15px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+}
+
+.hero__left span {
+    font-size: 14px;
+    font-family: 'Lora', serif;
+    color: #898989;
+}
+
+.hero__right img {
+    margin-left: 35px;
+    width: 555px;
+    height: 487px;
+}
+/* service 1 END */
+
+
+/* service 2 */
+.second-hero {
+    display: flex;
+    height: auto;
+}
+
+.hero__left-part2 img {
+    width: 555px;
+    height: 487px;
+}
+
+.hero__right-part2 h2 {
+    font-size: 52px;
+    font-family: 'Great Vibes', cursive;
+    color: #be9a67;
+}
+
+.hero__right-part2 h3 {
+    margin-top: -30px;
+    font-size: 45px;
+    font-weight: 700;
+    font-family: 'Cormorant Garamond', serif;
+    color: #4b4b4b;
+}
+
+.hero__right-part2 p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+}
+
+.hero__right-part2 span {
+    font-size: 14px;
+    font-family: 'Lora', serif;
+    color: #898989;
+}
+/* service 2 END */
+
+
+
+
+
+
+
+
+
+
+
