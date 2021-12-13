@@ -1,6 +1,4 @@
-import React from 'react';
-import './HomePage.css'
-
+import React from "react";
 
 
 const HomePage = () => {
