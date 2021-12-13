@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 
 import { Badge } from "antd";
 import {
-  SearchOutlined,
-  StarOutlined,
+  HeartOutlined,
   ShoppingCartOutlined,
   UserOutlined,
 } from "@ant-design/icons";
@@ -67,15 +66,7 @@ const Header = () => {
         ))}
       </div>
       <div className="nav-icons">
-        <SearchOutlined
-          style={{
-            fontSize: "20px",
-            cursor: "pointer",
-            color: "black",
-            marginRight: "25px",
-          }}
-        />
-        <StarOutlined
+        <HeartOutlined
           style={{
             fontSize: "20px",
             cursor: "pointer",
