@@ -1,5 +1,9 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700;900&display=swap'); */
-   
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Great+Vibes&family=Lora:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:wght@400&display=swap');
+
+
+/* reservation form */
 .book-container {
     background-color: #fafafa;
     margin: 200px;
@@ -12,23 +16,24 @@
     letter-spacing: 1px;
 }
   
-  .container-time {
-      background-color: rgba(0, 0, 0, .95);
-      padding: 50px;
-      outline: 3px dashed #be9a67;
-      outline-offset: -30px;
-      text-align: center;
-  }
-  .heading {
-      font-size: 35px;
-      text-transform: uppercase;
-  }
+.container-time {
+    background-color: rgba(0, 0, 0, .95);
+    padding: 50px;
+    outline: 3px dashed #be9a67;
+    outline-offset: -30px;
+    text-align: center;
+}
+
+.heading {
+    font-size: 35px;
+    text-transform: uppercase;
+}
   
-  .heading-days {
-      color:#be9a67;
-      font-size: 30px;
+.heading-days {
+    color:#be9a67;
+    font-size: 30px;
   
-  }
+}
   
   .heading-phone {
       font-size: 20px;
@@ -82,4 +87,103 @@
       -o-transform: scale(1.03);
       box-shadow: 10px 12px 15px rgba(0, 0, 0, .3);
   }
-  
+/* reservation form END */
+
+
+
+/* contacts section */
+.contacts {
+    margin-top: -60px;
+    text-align: center;
+}
+.contacts h2 {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Cormorant Garamond', serif;
+    color: #4b4b4b;
+}
+
+.contacts p {
+    margin-top: -25px;
+    margin-bottom: 60px;
+    font-size: 16px;
+    font-family: 'Lora', serif;
+}
+
+.contacts-section h4 {
+    margin-bottom: 35px;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: 'Lora', serif;
+    text-align: center;
+}
+
+.contacts span {
+    font-size: 14px;
+    font-family: 'Lora', serif;
+    color: #898989;
+}
+
+.info {
+    margin: 100px;
+    /* margin-bottom: 50px; */
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.info h3 {
+    color:#be9a67;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: 'Lora', serif;
+}
+
+.info p {
+    color: #000;
+    font-size: 16px;
+    font-family: 'Lora', serif;
+    cursor: pointer;
+}
+
+.info p:hover {
+    color: #be9a67;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.295);
+}
+
+.follow-icons {
+    display: flex;
+    justify-content: space-between;
+    font-size: 30px;
+    max-width: 100%;
+    width: 250px;
+    margin-left: 630px;
+}
+
+.follow-icons a {
+    color: #4b4b4b;
+}
+
+.follow-icons a:hover {
+    color: #be9a67;
+}
+/* contacts section END */
+
+/* location map */
+.responsive-map{
+    top: 70px;
+    margin-bottom: -273px;
+    overflow: hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+
+.responsive-map iframe{
+    left: 0;
+    height: 60%;
+    width: 100%;
+    position:absolute;
+    
+}
+/* location map END */
