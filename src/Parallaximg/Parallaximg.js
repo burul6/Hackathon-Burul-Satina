@@ -1,4 +1,5 @@
 import React from "react";
+
 import { ParallaxBanner } from "react-scroll-parallax";
 
 const Parallaximg = (props) => {

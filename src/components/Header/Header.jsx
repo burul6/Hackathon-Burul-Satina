@@ -35,7 +35,7 @@ const Header = () => {
     },
     {
       title: "Reviews",
-      link: "/Reviews",
+      link: "/reviews",
       id: 5,
     },
     {
