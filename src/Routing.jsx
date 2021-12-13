@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import AboutUs from "./components/AboutUs/AboutUs";
+import Reservation from "./components/Reservation/Reservation";
 import HomePage from "./pages/HomePage";
 import Services from "./pages/Services/Services";
 
@@ -17,6 +18,10 @@ const Routing = () => {
     {
       link:"/services",
       element: <Services />
+    },
+    {
+      link:"/reservation",
+      element: <Reservation />
     },
   ];
   return (
