@@ -42,8 +42,7 @@ const Header = () => {
       title: "Reservation",
       link: "/reservation",
       id: 6,
-    },
-    
+    }
   ];
   return (
     <div className="header">

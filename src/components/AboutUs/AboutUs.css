@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300&display=swap');
+
 .first-backslider{
     background-attachment: fixed;
     background-position: center;
@@ -6,6 +8,7 @@
     background-position: 50% 50%;
     background-repeat: no-repeat;
     top: 100px;
+    margin-top: 90px;
     left: 0px;
     width: 1285px;
     pointer-events: none;
@@ -68,12 +71,12 @@
     position: relative;
 }
 
-.backparalax-div{
+ .backparalax-div{
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url('http://unionagency.one/delice/img/about/baner-2-bg.jpg');
+    /* background-image: url('http://unionagency.one/delice/img/about/baner-2-bg.jpg'); */
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-attachment: scroll;
@@ -81,10 +84,10 @@
     width: 1285px;
     height: 550px;
     background-size: 1285px 803.12px;
-}
+} 
 
 .text-second-backparalax{
-    padding-top: 70px;
+    padding-top: 30px;
     background-color: white;
     width: 800px;
     height: 400px;
@@ -99,4 +102,57 @@
     margin-top: -90px;
     padding-top: 80px;
     text-align: center;
+}
+
+.meet-our-team{
+    font-family: 'Cormorant Garamond', serif;
+}
+
+
+.swiper-container{
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.first-swiper-wrapper{
+    width: 212px;
+    margin-right: 20px
+}
+
+.first-swiper__text{
+    visibility: visible;
+    opacity: 1;
+    color: #898989;
+}
+
+.swipper-icons{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.swipper-icons-item:hover{
+    color:#be9a67;
+    /* background-color: #898989; */
+}
+
+
+.third-backparalax{
+    position: relative;
+}
+
+.third-backparalax-div{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-image: url('http://unionagency.one/delice/img/about/baner-3-bg.jpg'); */
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    left: 0px;
+    width: 1285px;
+    height: 550px;
+    background-size: 1285px 803.12px;
 }

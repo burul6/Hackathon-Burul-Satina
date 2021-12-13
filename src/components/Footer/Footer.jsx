@@ -72,7 +72,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="footer-item" style={{ color: "white" }}>
-              <h5 style={{ fontSize: "17px" }}>CONTACT US</h5>
+              <h5 style={{ fontSize: "17px", color:"white" }}>CONTACT US</h5>
               <div style={{ position: "relative", color: "#898989" }}>
                 <p
                   style={{
@@ -92,7 +92,7 @@ const Footer = () => {
               </div>
             </div>
             <div className="footer-item" style={{ color: "white" }}>
-              <h5 style={{ fontSize: "17px" }}>SUBSCRIBE TO OUR NEWS</h5>
+              <h5 style={{ fontSize: "17px", color:"white" }}>SUBSCRIBE TO OUR NEWS</h5>
               <div style={{ display: "flex" }}>
                 <input
                   className="subs-foot"

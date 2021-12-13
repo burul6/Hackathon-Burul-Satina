@@ -7,6 +7,26 @@ import "./Services.css";
 
 const Services = () => {
   return (
+      <>
+    <div>
+      <div className="parallax-background">
+        <ParallaxProvider>
+          <Parallaximg
+            imgsrc={
+              "http://unionagency.one/delice/img/services/main-baner-bg.jpg"
+            }
+            height="650px"
+            
+            opacity=".5"
+          >
+            <h1 style={{ position: "absolute" }}>Our Services</h1>
+            <p style={{ position: "absolute" }}>
+              Duis aute irure dolor in reprehenderit in voluptate velit esse
+              <br></br>cillum dolore eu fugiat nulla pariatur.
+            </p>
+          </Parallaximg>
+        </ParallaxProvider>
+      </div>
     <>
       <div>
         <div className="parallax-background">
