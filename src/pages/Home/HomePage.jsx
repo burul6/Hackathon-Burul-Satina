@@ -1,9 +1,11 @@
 import React from "react";
 import './HomePage.css'
+import { ParallaxProvider } from "react-scroll-parallax";
+import Parallaximg from "../../Parallaximg/Parallaximg";
 
 const HomePage = () => {
     return (
-        <div className='main-content' style={{marginBottom: "327px"}}>
+        <div className='main-content'>
             <section className='full-height-slider'>
                 <div className='swipper-container'>
                     <div className='slider'>
@@ -54,6 +56,15 @@ const HomePage = () => {
                     </div>
                 </div>
             </section>
+            <ParallaxProvider>
+          <Parallaximg
+            imgsrc={
+              "http://unionagency.one/delice/img/home-1/section_home1_bg_1.jpg"
+            }
+            height="650px"
+            
+            opacity=".5"
+          >
             <section className='third-homepage-section' style={{position: "relative"}}>
                 <div className='homepage-empty'></div>
                 <div className='third-homepage-container' style={{position:"relative"}}>
@@ -69,6 +80,8 @@ const HomePage = () => {
                     </div>
                 </div>
             </section>
+            </Parallaximg>
+        </ParallaxProvider>
             <section className='four-homepage' style={{backgroundColor:"white"}}>
                 <div>
                     <div>
@@ -106,6 +119,15 @@ const HomePage = () => {
                     </div>
                 </div>
             </section>
+            <ParallaxProvider>
+          <Parallaximg
+            imgsrc={
+              "http://unionagency.one/delice/img/home-1/section_home1_bg_2.jpg"
+            }
+            height="650px"
+            
+            opacity=".5"
+          >
             <section className="second-back-img">
                 <div className="dishes-block">
                     <div className="dishes">DISHES</div>
@@ -113,6 +135,8 @@ const HomePage = () => {
                     <div style={{color:"#898989", lineHeight:"24px", textAlign:"center"}}>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor <br /> incididunt ut labore et dolore.</div>
                 </div>
             </section>
+            </Parallaximg>
+        </ParallaxProvider>
             <section className="last-homepage-content">
                 <div className="inner-last-cont">
                     <div className="inner-left-part">

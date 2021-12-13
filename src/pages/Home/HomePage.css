@@ -119,10 +119,9 @@
 
 
 .third-homepage-section{
-    height: 700px;
-    background-image: url('http://unionagency.one/delice/img/home-1/section_home1_bg_1.jpg');
+    height: 400px;
+    /* background-image: url('http://unionagency.one/delice/img/home-1/section_home1_bg_1.jpg'); */
     background-size: 100%;
-    background-color: black;
 }
 
 .inner-third-text{
@@ -130,7 +129,7 @@
     margin: 0 auto;
     display: block;
     overflow: hidden;
-    padding: 260px 50px 50px 50px;
+    padding: 0px 50px 50px 50px;
 }
 
 .inner-third-menu{
@@ -185,7 +184,7 @@
     padding: 260px 50px 50px 50px;
     height: 700px;
     background-size: 100%;
-    background-image: url("http://unionagency.one/delice/img/home-1/section_home1_bg_2.jpg");
+    /* background-image: url("http://unionagency.one/delice/img/home-1/section_home1_bg_2.jpg"); */
 }
 
 .dishes{
