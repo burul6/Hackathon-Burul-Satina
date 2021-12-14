@@ -94,7 +94,7 @@ const Header = () => {
             />
           </Badge>
         </Link>
-        <UserOutlined
+        <Link to="/login"><UserOutlined
           style={{
             fontSize: "20px",
             cursor: "pointer",
@@ -102,6 +102,7 @@ const Header = () => {
             marginLeft: "17px",
           }}
         />
+        </Link>
       </div>
     </div>
   );
