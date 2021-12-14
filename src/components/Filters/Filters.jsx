@@ -2,6 +2,7 @@ import React, { useContext, useEffect } from "react";
 import { Select, Slider } from "antd";
 import { productsContext } from "../../contexts/productsContext";
 
+
 const Filters = ({ price, setPrice, getProducts }) => {
   const { products } = useContext(productsContext);
   useEffect(() => {
@@ -31,6 +32,7 @@ const Filters = ({ price, setPrice, getProducts }) => {
         step={1}
         value={price}
       />
+
     </div>
   );
 };

@@ -8,12 +8,13 @@ import Routing from "./Routing";
 import "antd/dist/antd.css";
 
 import './App.css';
+import CartContextProvider from "./contexts/cartContext";
 
 
 function App() {
   return (
     <>
-
+    <CartContextProvider>
       <ProductsContextProvider>
         <BrowserRouter>
           <Header />
@@ -21,7 +22,7 @@ function App() {
           <Footer />
         </BrowserRouter>
       </ProductsContextProvider>
-
+      </CartContextProvider>
     </>
   );
 }
