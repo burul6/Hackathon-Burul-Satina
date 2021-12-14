@@ -1,9 +1,13 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+
 import AboutUs from "./components/AboutUs/AboutUs";
 import Reservation from "./components/Reservation/Reservation";
 import HomePage from "./pages/HomePage";
 import Services from "./pages/Services/Services";
+import Review from './components/Review/Review';
+import ProductList from './components/ProductList/ProductList';
+import LoginPage from './components/Registration/LoginPage';
 
 const Routing = () => {
   const PUBLIC_ROUTES = [
@@ -16,17 +20,40 @@ const Routing = () => {
       element: <AboutUs />,
     },
     {
-      link:"/services",
-      element: <Services />
+      link: "/services",
+      element: <Services />,
     },
     {
-      link:"/reservation",
-      element: <Reservation />
+      link: "/review",
+      element: <Review />,
+    },
+    {
+      link: "/reservation",
+      element: <Reservation />,
+    },
+    {
+      link: "/product",
+      element: <ProductList />,
+    },
+    {
+      link: "/login",
+      element: <LoginPage />,
     },
   ];
+  const ADMIN_ROUTES = [
+    {
+      link: "/admin",
+      element: <AdminPage />,
+      id: 1,
+    },
+  ];
+
   return (
     <Routes>
       {PUBLIC_ROUTES.map((item) => (
+        <Route path={item.link} element={item.element} />
+      ))}
+      {ADMIN_ROUTES.map((item) => (
         <Route path={item.link} element={item.element} />
       ))}
     </Routes>
