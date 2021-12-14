@@ -9,6 +9,7 @@ import ProductList from './components/ProductList/ProductList';
 import LoginPage from './components/Registration/LoginPage';
 import HomePage from "./pages/Home/HomePage";
 import AdminPage from "./pages/AdminPage";
+import MenuList from "./components/MenuList/MenuList";
 
 const Routing = () => {
   const PUBLIC_ROUTES = [
@@ -19,6 +20,10 @@ const Routing = () => {
     {
       link: "/about-us",
       element: <AboutUs />,
+    },
+    {
+      link: "/menu",
+      element: <MenuList />,
     },
     {
       link: "/services",
@@ -33,7 +38,7 @@ const Routing = () => {
       element: <Reservation />,
     },
     {
-      link: "/product",
+      link: "/products",
       element: <ProductList />,
     },
     {
