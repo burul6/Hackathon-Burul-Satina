@@ -1,5 +1,6 @@
 import React from 'react';
 import './MenuList.css';
+import { Link } from 'react-router-dom';
 
 const MenuList = () => {
     return (
@@ -22,7 +23,7 @@ const MenuList = () => {
                     </div>
                     <div className='inner-rightpart'>
                         <div className='start-the-day'>Start the day with our</div>
-                        <div className='breackfast-div'>BREAKFAST MENU</div>
+                        <Link to='/products'><div className='breackfast-div'>BREAKFAST MENU</div></Link>
                         <div style={{width:"100%", display:"flex"}}>
                             <div className='left-breakfast' style={{marginRight:"50px"}}>
                                 <div className='menu-break-item' style={{display:"flex"}}>
@@ -92,7 +93,7 @@ const MenuList = () => {
                 <div className='menu-list-break'>
                     <div className='inner-rightpart'>
                         <div className='start-the-day'>Get a break with</div>
-                        <div className='breackfast-div'>LUNCH MENU</div>
+                        <Link to='/products'><div className='breackfast-div'>LUNCH MENU</div></Link>
                         <div style={{width:"100%", display:"flex"}}>
                             <div className='left-breakfast' style={{marginRight:"50px"}}>
                                 <div className='menu-break-item' style={{display:"flex"}}>
@@ -168,7 +169,7 @@ const MenuList = () => {
                     </div>
                     <div className='inner-rightpart'>
                         <div className='start-the-day'>Relaxing with our</div>
-                        <div className='breackfast-div'>DINNER MENU</div>
+                        <Link to='/products'><div className='breackfast-div'>DINNER MENU</div></Link>
                         <div style={{width:"100%", display:"flex"}}>
                             <div className='left-breakfast' style={{marginRight:"50px"}}>
                                 <div className='menu-break-item' style={{display:"flex"}}>

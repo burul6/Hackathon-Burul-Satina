@@ -3,17 +3,18 @@ import { Routes, Route } from "react-router-dom";
 
 import AboutUs from "./components/AboutUs/AboutUs";
 import Reservation from "./components/Reservation/Reservation";
-import HomePage from "./pages/HomePage";
 import Services from "./pages/Services/Services";
 import Review from './components/Review/Review';
 import ProductList from './components/ProductList/ProductList';
 import LoginPage from './components/Registration/LoginPage';
+import HomePage from "./pages/Home/HomePage";
+import AdminPage from "./pages/AdminPage";
 
 const Routing = () => {
   const PUBLIC_ROUTES = [
     {
       link: "/",
-      element: <HomePage />,
+      element: <HomePage /> ,
     },
     {
       link: "/about-us",

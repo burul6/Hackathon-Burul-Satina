@@ -41,8 +41,7 @@ const Header = () => {
       title: "Reservation",
       link: "/reservation",
       id: 6,
-    },
-    
+    }
   ];
   return (
     <div className="header">
@@ -86,7 +85,7 @@ const Header = () => {
             />
           </Badge>
         </Link>
-        <UserOutlined
+        <Link to="/login"><UserOutlined
           style={{
             fontSize: "20px",
             cursor: "pointer",
@@ -94,6 +93,7 @@ const Header = () => {
             marginLeft: "17px",
           }}
         />
+        </Link>
       </div>
     </div>
   );

@@ -1,15 +1,19 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 
+import ProductsContextProvider from "./contexts/productsContext";
+import Routing from "./Routing";
 
 import "antd/dist/antd.css";
 
-import "./App.css";
+import './App.css';
+
 
 function App() {
   return (
-    <div>
+    <>
+
       <ProductsContextProvider>
         <BrowserRouter>
           <Header />
@@ -17,7 +21,8 @@ function App() {
           <Footer />
         </BrowserRouter>
       </ProductsContextProvider>
-    </div>
+
+    </>
   );
 }
 

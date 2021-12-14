@@ -1,5 +1,7 @@
 import React from "react";
 import { Row, Col } from "antd";
+import AdminProductsList from "../components/AdminProductsList/AdminProductsList";
+import AddProductModal from "../components/AddProductModal/AddProductModal";
 
 const AdminPage = () => {
   return (
