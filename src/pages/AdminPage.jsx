@@ -5,9 +5,9 @@ import AddProductModal from "../components/AddProductModal/AddProductModal";
 
 const AdminPage = () => {
   return (
-    <div className="container" style={{ marginTop: "15px" }}>
+    <div className="container" style={{ margin: "60px auto" }}>
       <Row>
-        <Col span={12}>
+        <Col span={22}>
           <Col span={22}>
             <AddProductModal />
             <AdminProductsList />

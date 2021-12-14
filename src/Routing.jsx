@@ -11,6 +11,7 @@ import HomePage from "./pages/Home/HomePage";
 import AdminPage from "./pages/AdminPage";
 import MenuList from "./components/MenuList/MenuList";
 import DetailsProduct from "./components/DetailsProduct/DetailsProduct";
+import EditProduct from "./components/EditProduct/EditProduct";
 
 const Routing = () => {
   const PUBLIC_ROUTES = [
@@ -28,6 +29,10 @@ const Routing = () => {
       link: "/menu",
       element: <MenuList />,
       id: 3,
+    },
+    {
+      link: "/menu",
+      element: <MenuList />,
     },
     {
       link: "/services",
@@ -65,6 +70,11 @@ const Routing = () => {
       link: "/admin",
       element: <AdminPage />,
       id: 1,
+    },
+    {
+      link: "/edit/:id",
+      element: <EditProduct /> ,
+      id: 2,
     },
   ];
 

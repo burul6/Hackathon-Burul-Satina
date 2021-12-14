@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 import { Badge } from "antd";
 import {
@@ -11,6 +11,12 @@ import {
 import "./Header.css";
 
 const Header = () => {
+  const location = useLocation();
+  // const {
+  //   handleLogout,
+  //   user: { email },
+  // } = useAuth();
+
   const NAV_ITEMS = [
     {
       title: "Home",
@@ -53,16 +59,27 @@ const Header = () => {
         {NAV_ITEMS.map((item) => (
           <Link
             to={item.link}
-            className="navbar__item"
-            // className={
-            //   location.pathname === item.link
-            //     ? "navbar__item-active"
-            //     : "navbar__item"
-            // }
+            className={
+              location.pathname === item.link
+                ? "navbar__item-active"
+                : "navbar__item"
+            }
           >
             {item.title}
           </Link>
         ))}
+        {/* {email === "burul.baktybekova05@gmail.com" ? (
+          <Link
+            to="/admin"
+            className={
+              location.pathname === "/admin"
+                ? "navbar__item-active"
+                : "navbar__item"
+            }
+          >
+            ADMIN
+          </Link>
+        ) : null} */}
       </div>
       <div className="nav-icons">
         <HeartOutlined
