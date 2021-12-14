@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lora:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Great+Vibes&family=Lora:wght@600&display=swap');
+
+
+.detail-info h2 {
+    margin-bottom: 1px;
+    font-size: 52px;
+    font-family: 'Great Vibes', cursive;
+    color: #be9a67;
+}
+
+.detail-info h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+.detail-info h3 {
+    font-size: 35px;
+    font-weight: 600;
+    font-family: 'Lora', serif;
+}
+
+.bottom-info {
+    text-align: center;
+}
+
+.bottom-info tab {
+    text-transform: uppercase;
+    color: black;
+}
+
+
+
+
+
+
+
+
+
+
+

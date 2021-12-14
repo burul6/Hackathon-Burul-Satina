@@ -21,6 +21,17 @@
     font-size: 14px;
 }
 
+.navbar__item-active {
+    margin: 25px;
+    border-bottom: 3px solid #be9a67;
+    color: black;
+    text-transform: uppercase;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+}
+
 .nav-icons {
     padding-top: 5px;
 }

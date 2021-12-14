@@ -1,4 +1,6 @@
+import React from "react";
 import React, { useContext, useEffect } from "react";
+
 import { Link, useLocation } from "react-router-dom";
 
 import { Badge } from "antd";
@@ -22,6 +24,7 @@ const Header = () => {
   useEffect(() => {
     getCart();
   }, []);
+
   const NAV_ITEMS = [
     {
       title: "Home",
@@ -64,16 +67,27 @@ const Header = () => {
         {NAV_ITEMS.map((item) => (
           <Link
             to={item.link}
-            className="navbar__item"
-            // className={
-            //   location.pathname === item.link
-            //     ? "navbar__item-active"
-            //     : "navbar__item"
-            // }
+            className={
+              location.pathname === item.link
+                ? "navbar__item-active"
+                : "navbar__item"
+            }
           >
             {item.title}
           </Link>
         ))}
+        {/* {email === "burul.baktybekova05@gmail.com" ? (
+          <Link
+            to="/admin"
+            className={
+              location.pathname === "/admin"
+                ? "navbar__item-active"
+                : "navbar__item"
+            }
+          >
+            ADMIN
+          </Link>
+        ) : null} */}
       </div>
       <div className="nav-icons">
         <HeartOutlined

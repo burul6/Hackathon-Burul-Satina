@@ -1,10 +1,11 @@
 import React, { useContext, useEffect, useState } from 'react';
-import { Modal, Button, Form, Input, Select, InputNumber } from "antd";
 
 import { productsContext } from "../../contexts/productsContext";
 
+import { Modal, Button, Form, Input, Select, InputNumber } from "antd";
+
 const AddProductModal = () => {
-    const { createProduct } = useContext(productsContext);
+  const { createProduct } = useContext(productsContext);
 
   const [isModalVisible, setIsModalVisible] = useState(false);
 
@@ -22,7 +23,7 @@ const AddProductModal = () => {
   };
     return (
         <>
-          <Button type="primary" onClick={showModal}>
+          <Button style={{background: "#be9a67", color: "white", marginBottom: "15px"}} onClick={showModal}>
         Add product
       </Button>
       <Modal
@@ -47,6 +48,7 @@ const AddProductModal = () => {
               },
             ]}
           >
+            <Input />
           </Form.Item>
 
           <Form.Item

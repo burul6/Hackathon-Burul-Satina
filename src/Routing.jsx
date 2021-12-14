@@ -10,18 +10,30 @@ import LoginPage from './components/Registration/LoginPage';
 import HomePage from "./pages/Home/HomePage";
 import AdminPage from "./pages/AdminPage";
 import MenuList from "./components/MenuList/MenuList";
+
+import DetailsProduct from "./components/DetailsProduct/DetailsProduct";
+import EditProduct from "./components/EditProduct/EditProduct";
+
 import ProductCart from "./components/Cart/ProductCart";
 import CheckOut from "./components/CheckOut/CheckOut";
+
 
 const Routing = () => {
   const PUBLIC_ROUTES = [
     {
       link: "/",
       element: <HomePage /> ,
+      id: 1,
     },
     {
       link: "/about-us",
       element: <AboutUs />,
+      id: 2,
+    },
+    {
+      link: "/menu",
+      element: <MenuList />,
+      id: 3,
     },
     {
       link: "/menu",
@@ -30,22 +42,32 @@ const Routing = () => {
     {
       link: "/services",
       element: <Services />,
+      id: 4,
     },
     {
       link: "/review",
       element: <Review />,
+      id: 5, 
     },
     {
       link: "/reservation",
       element: <Reservation />,
+      id: 6,
     },
     {
       link: "/products",
       element: <ProductList />,
+      id: 7,
+    },
+    {
+      link: "/products/:id",
+      element: <DetailsProduct />,
+      id: 8,
     },
     {
       link: "/login",
       element: <LoginPage />,
+      id: 9,
     },
     {
       link:"/cart",
@@ -61,6 +83,11 @@ const Routing = () => {
       link: "/admin",
       element: <AdminPage />,
       id: 1,
+    },
+    {
+      link: "/edit/:id",
+      element: <EditProduct /> ,
+      id: 2,
     },
   ];
 
