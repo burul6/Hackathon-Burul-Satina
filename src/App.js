@@ -10,6 +10,11 @@ import Reservation from './components/Reservation/Reservation';
 import 'antd/dist/antd.css';
 
 import './App.css';
+import ProductCart from './components/Cart/ProductCart';
+import AdminPage from './pages/AdminPage';
+import Review from './components/Review/Review';
+import ProductList from './components/ProductList/ProductList';
+import LoginPage from './components/Registration/LoginPage';
 
 function App() {
   return (
@@ -22,6 +27,11 @@ function App() {
             <Route path='/menu' element ={ <MenuList/> } />
             <Route path='/about-us' element={<AboutUs/>} />
             <Route path='/reservation' element={ <Reservation />} />
+            <Route path='/cart' element={<ProductCart/>} /> 
+            <Route path='/admin'element={<AdminPage/>} />
+            <Route path='/reviews' element={<Review/>} />
+            <Route path='/products'  element={<ProductList/>} />
+            <Route path='/login' element={<LoginPage/>} />
           </Routes>
         <Footer />
       </BrowserRouter>
