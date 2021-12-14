@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import {Card} from 'antd';
 import { Link } from 'react-router-dom';
 import {
@@ -7,13 +7,14 @@ import {
     StarOutlined,
   } from "@ant-design/icons";
   import './ProductCard.css';
+import { cartContext } from '../../contexts/cartContext';
 
 const ProductCard = ({item}) => {
-    // const {addProductToCart, checkItemInCart} = useContext(cartContext); 
-    // const [checkInCart, setCheckInCart] = useState(checkItemInCart(item.id));
-    // useEffect(() => {
-    //   setCheckInCart(setCheckInCart(item.id))
-    // })
+    const {addProductToCart, checkItemInCart} = useContext(cartContext); 
+    const [checkInCart, setCheckInCart] = useState(checkItemInCart(item.id));
+    useEffect(() => {
+      setCheckInCart(setCheckInCart(item.id))
+    })
     return (
         <div>
             <Card
@@ -24,11 +25,11 @@ const ProductCard = ({item}) => {
             actions={[
               <StarOutlined style={{ color: "black", fontSize: "25px" }} />,
               <ShoppingCartOutlined
-                style={{ color: "black", fontSize: "25px" }}
-                //  onClick={() => { 
-                //      addProductToCart(item); 
-                //      setCheckInCart(checkItemInCart(item.id));
-                // }}
+                style={{ color: checkInCart ? "#be9a67" : "black", fontSize: "25px" }}
+                 onClick={() => { 
+                     addProductToCart(item); 
+                     setCheckInCart(checkItemInCart(item.id));
+                }}
               />,
               <Link to={`/products/${item.id}`}>
                 <EllipsisOutlined
