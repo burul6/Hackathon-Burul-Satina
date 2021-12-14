@@ -10,7 +10,7 @@ const Filters = ({price, setPrice, getProducts}) => {
     return (
         <div style={{marginTop:"20px"}}>
         <Select style={{width:"50%"}} allowClear 
-            mode="multiple" placeholder="Filter by ingredients">
+            mode="multiple" placeholder="Filter by Ingredients">
                 {products.map((item) => (
                      <Select.Option value={item.ingredients} key={item.id}>{item.ingredients}</Select.Option>
                 ))}
