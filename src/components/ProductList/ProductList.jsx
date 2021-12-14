@@ -61,7 +61,7 @@ const ProductList = () => {
           value={search}
           onChange={(e) => setSearch(e.target.value)}
           style={{ width: "25vw" }}
-          placeholder="Search..."
+          placeholder="Search meal..."
         />
       </div>
       

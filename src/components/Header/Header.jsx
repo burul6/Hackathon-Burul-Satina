@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useContext, useEffect } from "react";
+import { Link, useLocation } from "react-router-dom";
 
 import { Badge } from "antd";
 import {
@@ -9,8 +9,19 @@ import {
 } from "@ant-design/icons";
 
 import "./Header.css";
+import { cartContext } from "../../contexts/cartContext";
 
 const Header = () => {
+  const location = useLocation();
+  // const {
+  //   handleLogout,
+  //   user: { email },
+  // } = useAuth();
+
+  const { getCart, cartLength } = useContext(cartContext);
+  useEffect(() => {
+    getCart();
+  }, []);
   const NAV_ITEMS = [
     {
       title: "Home",
@@ -74,16 +85,11 @@ const Header = () => {
           }}
         />
         <Link to="/cart">
-          <Badge count={5} size={"small"}>
-            <ShoppingCartOutlined
-              style={{
-                fontSize: "23px",
-                cursor: "pointer",
-                color: "black",
-                marginLeft: "17px",
-              }}
-            />
-          </Badge>
+        <Badge count={+cartLength} style={{backgroundColor:"#be9a67"}}>
+              <ShoppingCartOutlined
+                style={{ fontSize: "30px", cursor: "pointer" }}
+              />
+            </Badge>
         </Link>
         <Link to="/login"><UserOutlined
           style={{
