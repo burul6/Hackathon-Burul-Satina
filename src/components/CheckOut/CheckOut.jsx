@@ -1,5 +1,6 @@
 import React from 'react';
 import './CheckOut.css'
+import {Link} from 'react-router-dom';
 
 const CheckOut = () => {
     return (
@@ -50,7 +51,10 @@ const CheckOut = () => {
                    </div>
                </div>
                <div style={{textAlign:"center", marginTop:"30px"}}>
-               <button style={{width:"50%", height:"55px", cursor:"pointer", backgroundColor:"#00081C", color:"#CDBC7A", boeder:"none", outline:"none"}}>CONTINUE</button>
+               <Link to="/payment-card"><button style={{width:"50%", height:"55px", cursor:"pointer", 
+                     backgroundColor:"#00081C", color:"#CDBC7A", boeder:"none", outline:"none"}}>CONTINUE
+                     </button>
+                </Link>
                </div>
            </section>
            <section style={{width:"40%"}}></section>

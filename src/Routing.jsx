@@ -12,6 +12,7 @@ import AdminPage from "./pages/AdminPage";
 import MenuList from "./components/MenuList/MenuList";
 import ProductCart from "./components/Cart/ProductCart";
 import CheckOut from "./components/CheckOut/CheckOut";
+import PaymentCard from "./components/CheckOut/PaymentCard";
 
 const Routing = () => {
   const PUBLIC_ROUTES = [
@@ -54,6 +55,9 @@ const Routing = () => {
     {
       link:"/check-out",
       element: <CheckOut/>,
+    },{
+      link:"/payment-card",
+      element: <PaymentCard />
     }
   ];
   const ADMIN_ROUTES = [
