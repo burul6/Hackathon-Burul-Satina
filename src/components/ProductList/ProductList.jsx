@@ -6,6 +6,7 @@ import "./ProductList.css";
 import Filters from "../Filters/Filters";
 import { productsContext } from "../../contexts/productsContext";
 import ProductCard from "./ProductCard";
+import SortProducts from "../SortProducts/SortProducts";
 
 const ProductList = () => {
   const [searchParams, setSearchParams] = useSearchParams();
@@ -22,6 +23,8 @@ const ProductList = () => {
   const [price, setPrice] = useState([1, 1000000]);
 
   const [showFilters, setShowFilters] = useState(false);
+
+  const [showSort, setShowSort] = useState(false);
 
   const { getProducts, products, productsTotalCount } =
     useContext(productsContext);
@@ -63,6 +66,12 @@ const ProductList = () => {
           >
             {showFilters ? "HIDE FILTERS" : "SHOW FILTERS"}
           </div>
+          <div
+            style={{ cursor: "pointer" }}
+            onClick={() => setShowFilters(!showFilters)}
+          >
+            {showSort ? "HIDE SORT" : "SHOW SORT"}
+          </div>
           <Input.Search
             value={search}
             onChange={(e) => setSearch(e.target.value)}
@@ -78,7 +87,12 @@ const ProductList = () => {
             setPrice={setPrice}
             products={products}
           />
+        ):null}
+
+        {showSort ? (
+          <SortProducts />
         ) : null}
+
         <div
           className="products-list"
           style={{

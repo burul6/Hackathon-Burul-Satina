@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import { useParams } from "react-router";
-
+import {Link} from 'react-router-dom'
 import { productsContext } from "../../contexts/productsContext";
 
 import { Image, Button, Rate, Tabs } from "antd";
@@ -64,6 +64,7 @@ const DetailsProduct = () => {
                 defaultValue={4.5}
             />
               <div>
+                <Link to="/cart">
                 <Button
                   className="btn"
                   size="large"
@@ -78,6 +79,7 @@ const DetailsProduct = () => {
                 >
                   ADD TO CART
                 </Button>
+                </Link>
                 <Button
                   className="btn"
                   size="large"

@@ -8,22 +8,29 @@ import {
   ShoppingCartOutlined,
   UserOutlined,
 } from "@ant-design/icons";
+import { useAuthState } from 'react-firebase-hooks/auth';
 
 import "./Header.css";
 import { cartContext } from "../../contexts/cartContext";
+import { favoriteContext } from "../../contexts/favoriteContext";
+import { useAuth } from "../../contexts/authContext";
+import { googleContext } from "../..";
 
 const Header = () => {
   const location = useLocation();
-  // const {
-  //   handleLogout,
-  //   user: { email },
-  // } = useAuth();
+  
+  const {auth} = useContext(googleContext)
+    const [user] = useAuthState(auth);    
+    console.log(user)
 
   const { getCart, cartLength } = useContext(cartContext);
   useEffect(() => {
     getCart();
   }, []);
-
+  const {getFav, fav} = useContext(favoriteContext)
+  useEffect(() => {
+    getFav()
+  }, [])
   const NAV_ITEMS = [
     {
       title: "Home",
@@ -75,28 +82,30 @@ const Header = () => {
             {item.title}
           </Link>
         ))}
-        {/* {email === "burul.baktybekova05@gmail.com" ? (
+        {user.email === "taalaybekovasatina@gmail.com" ? (
           <Link
             to="/admin"
             className={
-              location.pathname === "/admin"
-                ? "navbar__item-active"
+              location.pathname === "/admin" ? 
+                "navbar__item-active"
                 : "navbar__item"
             }
           >
             ADMIN
           </Link>
-        ) : null} */}
+        ) : null} 
       </div>
       <div className="nav-icons">
-        <HeartOutlined
+        <Link to="/favorite"><HeartOutlined
           style={{
+            color: fav? "red" : "white",
             fontSize: "20px",
             cursor: "pointer",
             color: "black",
             marginLeft: "17px",
           }}
         />
+        </Link>
         <Link to="/cart">
         <Badge count={+cartLength} size={"small"} style={{backgroundColor:"#be9a67"}}>
               <ShoppingCartOutlined
@@ -104,7 +113,17 @@ const Header = () => {
               />
             </Badge>
         </Link>
-        <Link to="/login"><UserOutlined
+        <Link to="/login">
+         { user? (
+         <UserOutlined
+          style={{
+            fontSize: "20px",
+            cursor: "pointer",
+            color: "orange",
+            marginLeft: "17px",
+          }}
+        />):(
+          <UserOutlined
           style={{
             fontSize: "20px",
             cursor: "pointer",
@@ -112,6 +131,8 @@ const Header = () => {
             marginLeft: "17px",
           }}
         />
+        )}
+
         </Link>
       </div>
     </div>
