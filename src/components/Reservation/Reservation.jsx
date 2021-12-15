@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 import { ParallaxProvider } from "react-scroll-parallax";
 import Parallaximg from "../../Parallaximg/Parallaximg";
@@ -85,7 +86,7 @@ const Reservation = () => {
                 <option value="5+">5+ persons</option>
               </select>
             </div>
-            <button class="btn">Submit</button>
+            <Link to="/payment-card"><button class="btn">Submit</button></Link>
           </form>
         </div>
       </div>

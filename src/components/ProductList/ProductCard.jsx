@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import {
     ShoppingCartOutlined,
     EllipsisOutlined,
-    StarOutlined,
+    HeartOutlined,
   } from "@ant-design/icons";
   import './ProductCard.css';
 import { cartContext } from '../../contexts/cartContext';
@@ -23,9 +23,9 @@ const ProductCard = ({item}) => {
             style={{ width: "250px", margin: "10px" }}
             cover={<img style={{width:"250px", height:"200px"}} alt="example" src={item.image} />}
             actions={[
-              <StarOutlined style={{ color: "black", fontSize: "25px" }} />,
+              <HeartOutlined style={{ color: "black", fontSize: "25px" }} />,
               <ShoppingCartOutlined
-                style={{ color: checkInCart ? "#be9a67" : "black", fontSize: "25px" }}
+                style={{ color: checkInCart ? "#be9a67" : "black", fontSize: "27px" }}
                  onClick={() => { 
                      addProductToCart(item); 
                      setCheckInCart(checkItemInCart(item.id));

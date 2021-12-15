@@ -22,15 +22,19 @@
 }
 
 .bottom-info {
+    margin-top: 100px;
     text-align: center;
 }
 
-.bottom-info tab {
-    text-transform: uppercase;
-    color: black;
+.like-button {
+    font-size: 20px;
+    color:  black;
 }
 
-
+.liked {
+    font-weight: bold;
+    color: #1565c0;
+  }
 
 
 
