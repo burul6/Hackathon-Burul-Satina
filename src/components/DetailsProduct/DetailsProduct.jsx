@@ -95,19 +95,15 @@ const DetailsProduct = () => {
             </div>
           </div>
 
-          <section>
             <div className="bottom-info" >
               <Tabs defaultActiveKey="1" onChange={callback}>
                 <TabPane tab="Description" key="1">
                   {product.description}
                 </TabPane>
                 <TabPane tab="Review" key="2">
-                  Content of Tab Pane 2
                 </TabPane>
               </Tabs>
             </div>
-          </section>
-
          <div>
          <video src={product.video} width="100%" autoPlay loop muted></video>
          </div>
@@ -122,3 +118,4 @@ const DetailsProduct = () => {
 };
 
 export default DetailsProduct;
+ 
