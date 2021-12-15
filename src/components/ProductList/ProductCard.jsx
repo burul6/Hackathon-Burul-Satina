@@ -8,13 +8,19 @@ import {
   } from "@ant-design/icons";
   import './ProductCard.css';
 import { cartContext } from '../../contexts/cartContext';
+import { favoriteContext } from '../../contexts/favoriteContext';
 
 const ProductCard = ({item}) => {
     const {addProductToCart, checkItemInCart} = useContext(cartContext); 
+    const {addProductToFav, checkItemInFav} = useContext(favoriteContext)
     const [checkInCart, setCheckInCart] = useState(checkItemInCart(item.id));
+    const [checkInFav, setCheckInFav] = useState(checkItemInFav(item.id));
+    useEffect(() => {
+      setCheckInFav(setCheckInFav(item.id))
+    },[])
     useEffect(() => {
       setCheckInCart(setCheckInCart(item.id))
-    })
+    },[])
     return (
         <div>
             <Card
@@ -23,13 +29,20 @@ const ProductCard = ({item}) => {
             style={{ width: "250px", margin: "10px" }}
             cover={<img style={{width:"250px", height:"200px"}} alt="example" src={item.image} />}
             actions={[
-              <HeartOutlined style={{ color: "black", fontSize: "25px" }} />,
+
+              
+              <HeartOutlined  style={{ color: checkInFav? "red" : "black", fontSize: "25px" }}
+                    onClick={() => (
+                      addProductToFav(item),
+                      setCheckInFav(checkItemInFav(item.id))
+                    )} />,
               <ShoppingCartOutlined
-                style={{ color: checkInCart ? "#be9a67" : "black", fontSize: "27px" }}
-                 onClick={() => { 
-                     addProductToCart(item); 
-                     setCheckInCart(checkItemInCart(item.id));
-                }}
+                style={{ color: checkInCart ? "#be9a67" : "black", fontSize: "25px" }}
+                 onClick={() => ( 
+                     addProductToCart(item),
+                     setCheckInCart(checkItemInCart(item.id))
+                 )}
+
               />,
               <Link to={`/products/${item.id}`}>
                 <EllipsisOutlined

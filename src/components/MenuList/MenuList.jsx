@@ -1,6 +1,7 @@
 import React from 'react';
 import './MenuList.css';
 import { Link } from 'react-router-dom';
+import { Button } from 'antd';
 
 const MenuList = () => {
     return (
@@ -17,12 +18,16 @@ const MenuList = () => {
                 </div>
             </section>
             <section className='menulist-main-section'>
+                    
                 <div className='menu-list-break'>
                     <div className='inner-leftpart'>
                         <img style={{width:"100%"}} src="http://unionagency.one/delice/img/menu-1/plate-1.jpg" alt="" />
                     </div>
                     <div className='inner-rightpart'>
-                        <div className='start-the-day'>Start the day with our</div>
+                        
+                        
+                        
+                        <Link to="/products"><div className='start-the-day'>View All Menu List</div></Link>
                         <Link to='/products'><div className='breackfast-div'>BREAKFAST MENU</div></Link>
                         <div style={{width:"100%", display:"flex"}}>
                             <div className='left-breakfast' style={{marginRight:"50px"}}>

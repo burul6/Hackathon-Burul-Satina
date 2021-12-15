@@ -92,6 +92,10 @@
     margin-top: -90px;
 }
 
+.start-the-day:hover{
+    color: green;
+}
+
 .breackfast-div{
     font-weight: 500;
     color: #4b4b4b;

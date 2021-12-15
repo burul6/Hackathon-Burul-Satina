@@ -17,6 +17,7 @@ import EditProduct from "./components/EditProduct/EditProduct";
 import ProductCart from "./components/Cart/ProductCart";
 import CheckOut from "./components/CheckOut/CheckOut";
 import PaymentCard from "./components/CheckOut/PaymentCard";
+import Favorite from "./components/Favorite/Favorite";
 
 
 const Routing = () => {
@@ -80,6 +81,9 @@ const Routing = () => {
     },{
       link:"/payment-card",
       element: <PaymentCard />
+    },{
+      link:"/favorite",
+      element: <Favorite/>
     }
   ];
   const ADMIN_ROUTES = [
