@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom'
 import { productsContext } from "../../contexts/productsContext";
 
 import { Image, Button, Rate, Tabs } from "antd";
-import { LoadingOutlined } from "@ant-design/icons";
+import { LoadingOutlined, HeartFilled } from "@ant-design/icons";
 
 import "./DetailsProduct.css";
 
@@ -19,6 +19,7 @@ const DetailsProduct = () => {
   const { id } = useParams();
   const { getOneProduct, oneProduct } = useContext(productsContext);
   const [product, setProduct] = useState(null);
+  // console.log('product', product)
   useEffect(() => {
     getOneProduct(id);
   }, []);
@@ -26,7 +27,15 @@ const DetailsProduct = () => {
     setProduct(oneProduct);
   }, [oneProduct]);
 
-  // console.log('product', product)
+  // like system
+  const [like, setLike] = useState(0),
+    [isLike, setIsLike] = useState(false),
+    onLikeButtonClick = () => {
+      setLike(like + (isLike?-0:1));
+      setIsLike(isLike);
+    };
+    // like system
+
 
   return (
     <div className="container" style={{ marginTop: "150px" }}>
@@ -41,18 +50,19 @@ const DetailsProduct = () => {
           >
             <div style={{ width: "35vw" }}>
               <div>
-                <Image width="100%" src={product.image} />
+                <Image width="550px" src={product.image} />
               </div>
             </div>
             <div className="detail-info">
               <h2>{product.title}</h2>
               <h4>{product.ingredients}</h4>
-              <h3>{product.price}$</h3>
+              <h3>{product.price}$</h3> 
+              <div className={"like-button " + (isLike ? "liked" : "")}
+        onClick={onLikeButtonClick}> {<HeartFilled style={{color: "red", fontSize: "25px"}} />} | {like} </div>
               <Rate
                 allowHalf
                 defaultValue={4.5}
-                style={{ marginBottom: "10px" }}
-              />
+            />
               <div>
                 <Link to="/cart">
                 <Button
@@ -84,7 +94,6 @@ const DetailsProduct = () => {
                   MY FAVORITE
                 </Button>
               </div>
-              {/* <div>{product.description}</div> */}
             </div>
           </div>
 
@@ -101,7 +110,9 @@ const DetailsProduct = () => {
             </div>
           </section>
 
-          <video src={product.video} width="100%" autoPlay loop muted></video>
+         <div>
+         <video src={product.video} width="100%" autoPlay loop muted></video>
+         </div>
         </>
       ) : (
         <h2>

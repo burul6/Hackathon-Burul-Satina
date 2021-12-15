@@ -1,4 +1,3 @@
-
 import React, { useContext, useEffect } from "react";
 
 import { Link, useLocation } from "react-router-dom";
@@ -108,9 +107,9 @@ const Header = () => {
         />
         </Link>
         <Link to="/cart">
-        <Badge count={+cartLength} style={{backgroundColor:"#be9a67"}}>
+        <Badge count={+cartLength} size={"small"} style={{backgroundColor:"#be9a67"}}>
               <ShoppingCartOutlined
-                style={{ fontSize: "30px", cursor: "pointer" }}
+                style={{ fontSize: "25px", cursor: "pointer", marginLeft: "15px"}}
               />
             </Badge>
         </Link>

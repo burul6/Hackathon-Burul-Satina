@@ -60,6 +60,7 @@
   }
   
   .btn {
+      width: 50%;
       background-color: rgba(0, 0, 0, .95);
       color: #fff;
       padding: 10px 20px;

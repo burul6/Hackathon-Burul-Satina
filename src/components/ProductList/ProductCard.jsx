@@ -29,6 +29,7 @@ const ProductCard = ({item}) => {
             style={{ width: "250px", margin: "10px" }}
             cover={<img style={{width:"250px", height:"200px"}} alt="example" src={item.image} />}
             actions={[
+
               
               <HeartOutlined  style={{ color: checkInFav? "red" : "black", fontSize: "25px" }}
                     onClick={() => (
@@ -41,6 +42,7 @@ const ProductCard = ({item}) => {
                      addProductToCart(item),
                      setCheckInCart(checkItemInCart(item.id))
                  )}
+
               />,
               <Link to={`/products/${item.id}`}>
                 <EllipsisOutlined
