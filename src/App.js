@@ -9,11 +9,15 @@ import "antd/dist/antd.css";
 
 import './App.css';
 import CartContextProvider from "./contexts/cartContext";
+import FavContextProvider from "./contexts/favoriteContext";
+import { googleContext } from "./fire";
 
 
 function App() {
   return (
     <>
+    <googleContext>
+    <FavContextProvider>
     <CartContextProvider>
       <ProductsContextProvider>
         <BrowserRouter>
@@ -23,6 +27,8 @@ function App() {
         </BrowserRouter>
       </ProductsContextProvider>
       </CartContextProvider>
+      </FavContextProvider>
+      </googleContext>
     </>
   );
 }

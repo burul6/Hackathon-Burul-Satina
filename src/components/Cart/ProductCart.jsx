@@ -32,7 +32,7 @@ const ProductCart = () => {
                                 size="large"
                                 style={{ margin: "30px 90px", width: "30%", backgroundColor:"#be9a67", color:"white" }}
                             >
-                                 GO TO THE CHECKOUT
+                                 BUY
                             </Button>
                             </Link>
                         </div>
