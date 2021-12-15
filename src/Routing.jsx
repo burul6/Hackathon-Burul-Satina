@@ -16,6 +16,7 @@ import EditProduct from "./components/EditProduct/EditProduct";
 
 import ProductCart from "./components/Cart/ProductCart";
 import CheckOut from "./components/CheckOut/CheckOut";
+import PaymentCard from "./components/CheckOut/PaymentCard";
 
 
 const Routing = () => {
@@ -76,6 +77,9 @@ const Routing = () => {
     {
       link:"/check-out",
       element: <CheckOut/>,
+    },{
+      link:"/payment-card",
+      element: <PaymentCard />
     }
   ];
   const ADMIN_ROUTES = [
