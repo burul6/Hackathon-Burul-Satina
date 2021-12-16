@@ -68,7 +68,7 @@ const ProductList = () => {
           </div>
           <div
             style={{ cursor: "pointer" }}
-            onClick={() => setShowFilters(!showFilters)}
+            onClick={() => setShowSort(!showSort)}
           >
             {showSort ? "HIDE SORT" : "SHOW SORT"}
           </div>

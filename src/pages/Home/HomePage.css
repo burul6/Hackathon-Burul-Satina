@@ -225,6 +225,12 @@
 
 .inner-right-part{
     width: 50%;
+   
+}
+
+.menulist-photo{
+    width: 30%;
+    margin-right: 40px;
 }
 
 .we-do-it{
@@ -233,4 +239,138 @@
     color: #f4a01b;
     text-align: center;
     font-weight: 700;
+}
+
+
+@media screen and (max-width: 375px){
+    .aboutUs-leftphoto{
+        display: none;
+    }
+    .menulist-photo{
+        width: 100%;
+    }
+    .inner-last-cont{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .inner-left-part{
+        width: 100%;
+    }
+    .inner-right-part{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .we-do-it{
+        font-size: 45px;
+    }
+    .last-homepage-content{
+        padding-left: 10px;
+    }
+    .inner-inner-right{
+        display: flex;
+        flex-direction: column;
+    }
+    .our-menu{
+        font-size: 45px;
+    }
+    .about-us-center{
+        font-size: 45px;
+    }
+
+}
+@media screen and (max-width: 425px){
+    .aboutUs-leftphoto{
+        display: none;
+    }
+    .menulist-photo{
+        width: 100%;
+    }
+    .inner-last-cont{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .inner-left-part{
+        width: 100%;
+    }
+    .inner-right-part{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .we-do-it{
+        font-size: 45px;
+    }
+    .last-homepage-content{
+        padding-left: 10px;
+    }
+    .inner-inner-right{
+        display: flex;
+        flex-direction: column;
+    }
+    .our-menu{
+        font-size: 45px;
+    }
+    .about-us-center{
+        font-size: 45px;
+    }
+
+}
+@media screen and (max-width: 768px){
+    .aboutUs-leftphoto{
+        display: none;
+    }
+    .menu-list{
+        flex-wrap: wrap;
+    }
+    .menulist-photo{
+        width: 40%;
+    }
+    .inner-last-cont{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .inner-left-part{
+        width: 100%;
+    }
+    .center-text-home{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 320px){
+    .aboutUs-leftphoto{
+        display: none;
+    }
+    .menulist-photo{
+        width: 100%;
+    }
+    .inner-last-cont{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .inner-left-part{
+        width: 100%;
+    }
+    .inner-right-part{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .we-do-it{
+        font-size: 45px;
+    }
+    .last-homepage-content{
+        padding-left: 10px;
+    }
+    .inner-inner-right{
+        display: flex;
+        flex-direction: column;
+    }
+    .our-menu{
+        font-size: 45px;
+    }
+    .about-us-center{
+        font-size: 45px;
+    }
 }

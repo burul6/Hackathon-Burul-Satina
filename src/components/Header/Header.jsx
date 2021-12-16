@@ -26,6 +26,7 @@ const Header = () => {
   const [user] = useAuthState(auth);
   console.log(user);
 
+
   const { getCart, cartLength } = useContext(cartContext);
   useEffect(() => {
     getCart();
@@ -95,9 +96,11 @@ const Header = () => {
             {item.title}
           </Link>
         ))}
+        
         <div className="hamburger" onClick={handleClick}>
           {click ? <CloseOutlined style={{color: "black"}}/> : <MenuOutlined style={{color: "black"}}/>}
         </div>
+
         {user === "taalaybekovasatina@gmail.com" ? (
           <Link
             to="/admin"

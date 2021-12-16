@@ -2,10 +2,20 @@ import React from 'react';
 import './MenuList.css';
 import { Link } from 'react-router-dom';
 import { Button } from 'antd';
+import { ParallaxProvider } from "react-scroll-parallax";
+import Parallaximg from '../../Parallaximg/Parallaximg';
 
 const MenuList = () => {
     return (
         <div className='menulist-main-content'>
+            <ParallaxProvider>
+            <Parallaximg
+            imgsrc={
+              "http://unionagency.one/delice/img/menu-1/main-baner-bg.jpg"
+            }
+            height="550px"
+            opacity=".5"
+          >
             <section className='menulist-fullheight-slider'>
                 <div className='menulist-paralax'>
                     <div className='paralax-container'>
@@ -13,22 +23,23 @@ const MenuList = () => {
                     </div>
                 </div>
                 <div className='menulist-table'>
-                    <div style={{color:"white", fontSize:"95px", fontWeight:"550"}}>Our Menu</div>
+                    <div  style={{color:"white", fontSize:"95px", fontWeight:"550"}}>Our Menu</div>
                     <div style={{color:"rgba(255,255,255,0.7)", fontSize:"20px", lineHeight:"24px"}}>Duis aute irure dolor in reprehenderit in voluptate velit esse <br /> cillum dolore eu fugiat nulla pariatur.</div>
                 </div>
             </section>
-            <section className='menulist-main-section'>
+            </Parallaximg>
+            </ParallaxProvider>
+            <section className='menulist-main-section' style={{marginTop:"150px"}}>
                     
                 <div className='menu-list-break'>
                     <div className='inner-leftpart'>
                         <img style={{width:"100%"}} src="http://unionagency.one/delice/img/menu-1/plate-1.jpg" alt="" />
                     </div>
                     <div className='inner-rightpart'>
-                        
-                        
-                        
+                      
                         <Link to="/shop"><div className='start-the-day'>View All Menu List</div></Link>
                         <Link to='/shop'><div className='breackfast-div'>BREAKFAST MENU</div></Link>
+
                         <div style={{width:"100%", display:"flex"}}>
                             <div className='left-breakfast' style={{marginRight:"50px"}}>
                                 <div className='menu-break-item' style={{display:"flex"}}>
@@ -99,7 +110,7 @@ const MenuList = () => {
                     <div className='inner-rightpart'>
                         <div className='start-the-day'>Get a break with</div>
                         <Link to='/products'><div className='breackfast-div'>LUNCH MENU</div></Link>
-                        <div style={{width:"100%", display:"flex"}}>
+                        <div className='big-breakfast-div'>
                             <div className='left-breakfast' style={{marginRight:"50px"}}>
                                 <div className='menu-break-item' style={{display:"flex"}}>
                                             <div>
