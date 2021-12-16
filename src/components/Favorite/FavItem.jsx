@@ -1,9 +1,12 @@
-import React, { useContext } from 'react';
+import React, { useContext, useState } from 'react';
 import { List, Button } from "antd";
 import { favoriteContext } from '../../contexts/favoriteContext';
+import { cartContext } from '../../contexts/cartContext';
 
 const FavItem = ({item}) => {
+    const {addProductToCart, checkItemInCart} = useContext(cartContext); 
     const {deleteFromFav} = useContext(favoriteContext);
+    const [checkInCart, setCheckInCart] = useState(checkItemInCart(item.id));
     return (
         <div>
            <List.Item
@@ -25,7 +28,11 @@ const FavItem = ({item}) => {
                     <h3>{"$" + item.item.price}</h3>
                     </div>}
                 description={
-                <Button onClick={() => deleteFromFav(item.item.id)}>Remove from Favorite</Button>} 
+                    < div style={{display:"flex"}}>
+                    <Button danger style={{marginRight:"40px"}} onClick={() => deleteFromFav(item.item.id)}>Remove from Favorite</Button>
+                    <Button onClick={() => addProductToCart(item)}>Add to Cart</Button>
+                    </div>
+                } 
             />
             </List.Item>
         </div>
