@@ -52,8 +52,8 @@
     /* background-image: url('http://unionagency.one/delice/img/menu-1/main-baner-bg.jpg'); */
     top: 100px;
     left: 0px;
-    width: 1285px;
-    height: 550px;
+    width: 1536px;
+    height: 650px;
     overflow: hidden;
     pointer-events: none;
     transition: transform 0s linear -1ms, -webkit-transform 0s linear -1ms;

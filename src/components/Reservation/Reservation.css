@@ -7,7 +7,7 @@
 .book-container {
     background-color: #fafafa;
     margin: 200px;
-    /* box-shadow: 10px 0px 15px rgba(0, 0, 0, .1); */
+    box-shadow: 10px 0px 15px rgba(0, 0, 0, .1);
     display: grid;
     grid-template-columns: 40% 60%;
     font-family: 'Raleway', sans-serif;
@@ -15,7 +15,7 @@
     color: #fff;
     letter-spacing: 1px;
 }
-  
+
 .container-time {
     background-color: rgba(0, 0, 0, .95);
     padding: 50px;
@@ -188,3 +188,92 @@
     
 }
 /* location map END */
+
+@media screen and (max-width: 1440px) {
+    .follow-icons {
+        font-size: 30px;
+        max-width: 100%;
+        width: 250px;
+        margin-left: 595px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .book-container {
+        margin: 100px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+
+    .info {
+        margin: 50px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .container-time {
+        padding: 40px;
+        text-align: center;
+    }
+
+    .container-form {
+        padding: 50px 20px;
+    }
+
+    .container-form form {
+        display: grid;
+        grid-row-gap: 10px;
+    }
+
+    .follow-icons {
+        font-size: 25px;
+        max-width: 100%;
+        width: 250px;
+        margin-left: 390px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .book-container {
+        margin: 30px;
+        /* display: grid;
+        grid-template-columns: 70% 40%; */
+    }
+
+    /* .container-time {
+        padding: 40px;
+        text-align: center;
+    }
+
+    .container-form {
+        padding: 50px 20px;
+    }
+
+    .container-form form {
+        display: grid;
+        grid-row-gap: 10px;
+    } */
+    .contacts {
+        margin-top: 60px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .contacts-section {
+       
+    }
+
+    .info {
+        margin: 50px;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .follow-icons {
+        font-size: 20px;
+        max-width: 100%;
+        width: 250px;
+        margin-left: 270px;
+    }
+}
+

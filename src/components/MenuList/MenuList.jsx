@@ -36,7 +36,10 @@ const MenuList = () => {
                         <img style={{width:"100%"}} src="http://unionagency.one/delice/img/menu-1/plate-1.jpg" alt="" />
                     </div>
                     <div className='inner-rightpart'>
-                        <Link to='/products'><div className='breackfast-div'>BREAKFAST MENU</div></Link>
+                      
+                        <Link to="/shop"><div className='start-the-day'>View All Menu List</div></Link>
+                        <Link to='/shop'><div className='breackfast-div'>BREAKFAST MENU</div></Link>
+
                         <div style={{width:"100%", display:"flex"}}>
                             <div className='left-breakfast' style={{marginRight:"50px"}}>
                                 <div className='menu-break-item' style={{display:"flex"}}>
