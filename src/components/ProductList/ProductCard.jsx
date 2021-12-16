@@ -22,10 +22,11 @@ const ProductCard = ({item}) => {
       setCheckInCart(setCheckInCart(item.id))
     },[])
     return (
-        <div>
+        <div className='productlist-cards'>
             <Card
             hoverable
             // key={item.id}
+            className='productlist-csrd'
             style={{ width: "250px", margin: "10px" }}
             cover={<img style={{width:"250px", height:"200px"}} alt="example" src={item.image} />}
             actions={[

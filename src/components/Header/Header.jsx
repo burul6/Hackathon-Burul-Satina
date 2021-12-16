@@ -19,9 +19,9 @@ import { googleContext } from "../..";
 const Header = () => {
   const location = useLocation();
   
-  const {auth} = useContext(googleContext)
+  const {auth} = useContext(googleContext);
     const [user] = useAuthState(auth);    
-    console.log(user)
+    console.log("it is", user)
 
   const { getCart, cartLength } = useContext(cartContext);
   useEffect(() => {
@@ -82,7 +82,7 @@ const Header = () => {
             {item.title}
           </Link>
         ))}
-        {user.email === "taalaybekovasatina@gmail.com" ? (
+        {user === "taalaybekovasatina@gmail.com" ? (
           <Link
             to="/admin"
             className={
