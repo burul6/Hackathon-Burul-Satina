@@ -112,8 +112,6 @@
     font-family: 'Lora', serif;
     color: #898989;
 }
-
-
 /* service 2 END */
 
 
@@ -197,7 +195,12 @@
 }
 /* service 4 END */
 
-
+@media screen and (max-width: 1024px) {
+    .parallax-background imgsrc {
+        /* height: 650px; */
+        width: 1024px;
+    }
+}
 
 
 

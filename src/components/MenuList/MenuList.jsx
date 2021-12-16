@@ -27,8 +27,8 @@ const MenuList = () => {
                         
                         
                         
-                        <Link to="/products"><div className='start-the-day'>View All Menu List</div></Link>
-                        <Link to='/products'><div className='breackfast-div'>BREAKFAST MENU</div></Link>
+                        <Link to="/shop"><div className='start-the-day'>View All Menu List</div></Link>
+                        <Link to='/shop'><div className='breackfast-div'>BREAKFAST MENU</div></Link>
                         <div style={{width:"100%", display:"flex"}}>
                             <div className='left-breakfast' style={{marginRight:"50px"}}>
                                 <div className='menu-break-item' style={{display:"flex"}}>

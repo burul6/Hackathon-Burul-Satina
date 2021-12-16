@@ -1,5 +1,4 @@
-import React, { useContext, useEffect } from "react";
-
+import React, { useContext, useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 
 import { Badge } from "antd";
@@ -7,30 +6,38 @@ import {
   HeartOutlined,
   ShoppingCartOutlined,
   UserOutlined,
+  MenuOutlined,
+  CloseOutlined,
 } from "@ant-design/icons";
-import { useAuthState } from 'react-firebase-hooks/auth';
 
-import "./Header.css";
+import { useAuthState } from "react-firebase-hooks/auth";
+
 import { cartContext } from "../../contexts/cartContext";
 import { favoriteContext } from "../../contexts/favoriteContext";
 import { useAuth } from "../../contexts/authContext";
 import { googleContext } from "../..";
 
+import "./Header.css";
+
 const Header = () => {
   const location = useLocation();
-  
-  const {auth} = useContext(googleContext)
-    const [user] = useAuthState(auth);    
-    console.log(user)
+
+  const { auth } = useContext(googleContext);
+  const [user] = useAuthState(auth);
+  console.log(user);
 
   const { getCart, cartLength } = useContext(cartContext);
   useEffect(() => {
     getCart();
   }, []);
-  const {getFav, fav} = useContext(favoriteContext)
+  const { getFav, fav } = useContext(favoriteContext);
   useEffect(() => {
-    getFav()
-  }, [])
+    getFav();
+  }, []);
+
+  const [click, setClick] = useState(false);
+  const handleClick = () => setClick(!click);
+
   const NAV_ITEMS = [
     {
       title: "Home",
@@ -48,28 +55,34 @@ const Header = () => {
       id: 3,
     },
     {
+      title: "Shop",
+      link: "/shop",
+      id: 4,
+    },
+    {
       title: "Services",
       link: "/services",
-      id: 4,
+      id: 5,
     },
     {
       title: "Reviews",
       link: "/reviews",
-      id: 5,
+      id: 6,
     },
     {
       title: "Reservation",
       link: "/reservation",
-      id: 6,
-    }
+      id: 7,
+    },
   ];
+
   return (
     <div className="header">
       <Link to="/" className="nav-logo">
         <img src="http://unionagency.one/delice/img/logo2.png" alt="logo" />
       </Link>
 
-      <div className="navbar">
+      <div className="navbar" className={click ? "navbar__item-active" : "navbar__item"}>
         {NAV_ITEMS.map((item) => (
           <Link
             to={item.link}
@@ -82,57 +95,69 @@ const Header = () => {
             {item.title}
           </Link>
         ))}
-        {user.email === "taalaybekovasatina@gmail.com" ? (
+        <div className="hamburger" onClick={handleClick}>
+          {click ? <CloseOutlined style={{color: "black"}}/> : <MenuOutlined style={{color: "black"}}/>}
+        </div>
+        {user === "taalaybekovasatina@gmail.com" ? (
           <Link
             to="/admin"
             className={
-              location.pathname === "/admin" ? 
-                "navbar__item-active"
+              location.pathname === "/admin"
+                ? "navbar__item-active"
                 : "navbar__item"
             }
           >
             ADMIN
           </Link>
-        ) : null} 
+        ) : null}
       </div>
       <div className="nav-icons">
-        <Link to="/favorite"><HeartOutlined
-          style={{
-            color: fav? "red" : "white",
-            fontSize: "20px",
-            cursor: "pointer",
-            color: "black",
-            marginLeft: "17px",
-          }}
-        />
+        <Link to="/favorite">
+          <HeartOutlined
+            style={{
+              color: fav ? "red" : "white",
+              fontSize: "20px",
+              cursor: "pointer",
+              color: "black",
+              marginLeft: "17px",
+            }}
+          />
         </Link>
         <Link to="/cart">
-        <Badge count={+cartLength} size={"small"} style={{backgroundColor:"#be9a67"}}>
-              <ShoppingCartOutlined
-                style={{ fontSize: "25px", cursor: "pointer", marginLeft: "15px"}}
-              />
-            </Badge>
+          <Badge
+            count={+cartLength}
+            size={"small"}
+            style={{ backgroundColor: "#be9a67" }}
+          >
+            <ShoppingCartOutlined
+              style={{
+                fontSize: "25px",
+                cursor: "pointer",
+                marginLeft: "15px",
+              }}
+            />
+          </Badge>
         </Link>
         <Link to="/login">
-         { user? (
-         <UserOutlined
-          style={{
-            fontSize: "20px",
-            cursor: "pointer",
-            color: "orange",
-            marginLeft: "17px",
-          }}
-        />):(
-          <UserOutlined
-          style={{
-            fontSize: "20px",
-            cursor: "pointer",
-            color: "black",
-            marginLeft: "17px",
-          }}
-        />
-        )}
-
+          {user ? (
+            <UserOutlined
+              style={{
+                fontSize: "20px",
+                cursor: "pointer",
+                color: "orange",
+                marginLeft: "17px",
+              }}
+            />
+          ) : (
+            <UserOutlined
+              style={{
+                fontSize: "20px",
+                cursor: "pointer",
+                color: "black",
+                marginLeft: "17px",
+              }}
+            />
+          )}
         </Link>
       </div>
     </div>

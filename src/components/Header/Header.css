@@ -1,19 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
 
 .header {
-    width: 95%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    margin: 25px auto;
+    padding: 20px 20px 20px 20px;
+    background: #fff;
 }
 
 .navbar {
     padding-top: 6px;
-    padding-left: 540px;
+    padding-left: 600px;
 }
 
 .navbar__item {
-    margin: 25px;
+    margin: 15px;
     text-transform: uppercase;
     color: black;
     font-family: 'Ubuntu', sans-serif;
@@ -22,7 +23,7 @@
 }
 
 .navbar__item-active {
-    margin: 25px;
+    margin: 15px;
     border-bottom: 3px solid #be9a67;
     color: black;
     text-transform: uppercase;
@@ -34,4 +35,73 @@
 
 .nav-icons {
     padding-top: 5px;
+}
+
+.hamburger {
+    display: none;
+}
+@media screen and (max-width: 1470px) {
+    .header {
+        padding: 20px 20px 20px 20px;
+    }
+
+    .navbar {
+        padding-top: 6px;
+        padding-left: 590px;
+    }
+}
+
+@media screen and (max-width: 1470px) {
+    .header {
+        padding: 20px 20px 20px 20px;
+    }
+
+    .navbar {
+        padding-top: 6px;
+        padding-left: 550px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .header {
+        padding: 15px 15px 15px 15px;
+    }
+
+    .navbar {
+        padding-top: 6px;
+        padding-left: 150px;
+    }
+
+    .nav-icons {
+        padding-top: 5px;
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .header {
+        padding: 15px 15px 15px 15px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    /* .navbar__item {
+        position: absolute;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        left: -100;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        transition: 0.3s;
+        background: #be9a67;
+        font-size: 12px;
+    }
+
+    .navbar__item-active {
+        left: 0;
+    } */
+
 }
