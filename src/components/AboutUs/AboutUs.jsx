@@ -181,7 +181,7 @@ const AboutUs = () => {
                     </div>
                 </div>
             </section>
-            <section className='our-team-section' style={{marginBottom:"0px"}}>
+            {/* <section className='our-team-section' style={{marginBottom:"0px"}}>
                 <div className='gallery-div'>
                     <div style={{textAlign:"center", fontSize:'50px', marginBottom:"-30px"}}>-</div>
                     <div className='meet-our-team' style={{textAlign:"center", color:"#4b4b4b", fontSize:"50px", fontWeight:"700"}}>Gallery</div>
@@ -194,8 +194,9 @@ const AboutUs = () => {
                     <img className='about-us-photo' src="http://unionagency.one/delice/img/about/food-image-4.jpg" alt="" />
                     <img className='about-us-photo' src="http://unionagency.one/delice/img/about/food-image-5.jpg" alt="" />
                     <img className='about-us-photo' src="http://unionagency.one/delice/img/about/food-image-6.jpg" alt="" />
+                    <img className='about-us-photo' src="http://unionagency.one/delice/img/about/food-image-2.jpg" alt="" />
                 </div>
-            </section>
+            </section> */}
         </div>
     );
 };
