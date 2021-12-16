@@ -6,6 +6,7 @@ import {
     TwitterOutlined,
     YoutubeOutlined,
     WhatsAppOutlined,
+    ToTopOutlined
 } from "@ant-design/icons";
 
 import "./Footer.css";
@@ -13,6 +14,9 @@ import "./Footer.css";
 const Footer = () => {
   return (
     <footer>
+          <div style={{textAlign:"center"}}>
+          <a  onClick={() => window.scrollTo({top: 0, behavior: 'smooth'})}><img style={{width:"40px", marginTop:"25px"}} src="https://www.pngkey.com/png/full/528-5281777_back-to-top-voltron-green-lion-symbol.png" alt="" /></a>
+          </div> 
       <div className="footer-cintainer">
         <div className="footer-inner__container">
           <div className="footer-blocks">
