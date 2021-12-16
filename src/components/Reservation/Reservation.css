@@ -206,9 +206,8 @@
     }
 
     .info {
-        margin: 50px;
-        margin-bottom: 50px;
-        text-align: center;
+        margin: 20px;
+        margin-bottom: 30px;
     }
 
     .container-time {
@@ -231,49 +230,92 @@
         width: 250px;
         margin-left: 390px;
     }
+
+    .responsive-map{
+        top: 60px;
+        margin-bottom: 30px;
+        overflow: hidden;
+    }
+    
+    .responsive-map iframe {
+        height: 100%;
+    }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
     .book-container {
         margin: 30px;
-        /* display: grid;
-        grid-template-columns: 70% 40%; */
     }
 
-    /* .container-time {
-        padding: 40px;
-        text-align: center;
-    }
-
-    .container-form {
-        padding: 50px 20px;
-    }
-
-    .container-form form {
-        display: grid;
-        grid-row-gap: 10px;
-    } */
     .contacts {
         margin-top: 60px;
         text-align: center;
-        width: 100%;
-    }
-
-    .contacts-section {
        
     }
 
+    .contacts-section {
+        width: 100%;
+    }
+
     .info {
-        margin: 50px;
         margin-bottom: 50px;
         text-align: center;
     }
 
     .follow-icons {
         font-size: 20px;
-        max-width: 100%;
-        width: 250px;
-        margin-left: 270px;
+        margin-left: 265px;
+    }
+
+    .responsive-map{
+        top: 60px;
+        margin-bottom: -26px;
+        overflow: hidden;
+    }
+    
+    .responsive-map iframe {
+        height: 80%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .reservation {
+        width: 100%;
+    }
+
+    .book-container {
+        margin: 30px;
+    }
+
+    .contacts {
+        margin-top: 60px;
+        text-align: center;
+       
+    }
+
+    .contacts-section {
+        width: 100%;
+    }
+
+
+    .info {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .follow-icons {
+        font-size: 20px;
+        margin-left: 265px;
+    }
+
+    .responsive-map{
+        top: 60px;
+        margin-bottom: 30px;
+        overflow: hidden;
+    }
+    
+    .responsive-map iframe {
+        height: 100%;
     }
 }
 
