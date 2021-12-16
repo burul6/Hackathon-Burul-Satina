@@ -186,6 +186,9 @@ const Header = () => {
           </a>
         </Dropdown>
       </div>
+      <div className="hamburger" onClick={handleClick}>
+          {click ? <CloseOutlined style={{color: "black"}}/> : <MenuOutlined style={{color: "black"}}/>}
+        </div>
     </div>
   );
 };
