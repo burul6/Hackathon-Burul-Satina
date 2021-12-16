@@ -3,3 +3,13 @@
     font-family: 'Great Vibes', cursive;
     color: #be9a67;
 }
+
+@media screen and (max-width: 320px){
+    .productlist-cards{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .productlist-csrd{
+        width: 300px;
+    }
+}

@@ -49,7 +49,7 @@
   background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
-    background-image: url('http://unionagency.one/delice/img/menu-1/main-baner-bg.jpg');
+    /* background-image: url('http://unionagency.one/delice/img/menu-1/main-baner-bg.jpg'); */
     top: 100px;
     left: 0px;
     width: 1285px;
@@ -110,6 +110,10 @@
     margin-bottom: 15px;
     cursor: pointer;
 }
+.big-breakfast-div{
+    width: 100%;
+    display: flex;
+}
 
 .menu-main-title:hover{
     color: #be9a67;
@@ -131,4 +135,26 @@
 
 .menu-break-item{
     margin-bottom: 25px;
+}
+
+
+@media screen and (max-width:320px){
+    .menu-list-break{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .inner-leftpart{
+        width: 100%;
+    }
+    .inner-rightpart{
+        width: 100%;
+    }
+    .breackfast-div{
+        font-size: 25px;
+    }
+    .big-breakfast-div{
+        display: flex;
+        flex-direction: column;
+    }
 }

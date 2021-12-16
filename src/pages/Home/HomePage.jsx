@@ -31,7 +31,7 @@ const HomePage = () => {
             <section className='aboutus-home'>
                 <div className='inner-aboutus'>
                     <div style={{width:"100%", display:"flex", clip: "rect(0px, 1278px, 679px, 0)"}}>
-                        <div style={{width:"20%"}}>
+                        <div  className="aboutUs-leftphoto" style={{width:"20%"}}>
                             <img  style={{width:"100%"}} src="http://unionagency.one/delice/img/home-1/about_home_1_img_1.jpg" alt="" />
                         </div>
                         <div className="center-text-home">
@@ -50,7 +50,7 @@ const HomePage = () => {
                                 </span>
                             </div>
                         </div>
-                        <div style={{width:"20%"}}>
+                        <div className="aboutUs-leftphoto" style={{width:"20%"}}>
                             <img  style={{width:"100%"}} src="http://unionagency.one/delice/img/home-1/about_home_1_img_2.jpg" alt="" />
                         </div>
                     </div>
@@ -89,19 +89,19 @@ const HomePage = () => {
                         <div style={{textAlign:"center", color:"#898989", lineHeight:"24px", fontSize:"17px"}}>Sed ut perspiciatis unde omnis iste natus error sit voluptatem ab illo <br /> accusantium doloremque laudantium, rem aperiamquae</div>
                     </div>
                     <div className="menu-list">
-                        <div style={{width:"30%", marginRight:"40px", textAlign:"center"}}>
+                        <div className="menulist-photo">
                             <img className="menu-list-img" src="http://unionagency.one/delice/img/home-1/menu_item_1.jpg" alt="" />
                             <h4>DESSERTS</h4>
                         </div>
-                        <div style={{width:"30%", marginRight:"40px"}}>
+                        <div className="menulist-photo">
                             <img className="menu-list-img" src="http://unionagency.one/delice/img/home-1/menu_item_2.jpg" alt="" />
                             <h4>BREAKFAST</h4>
                         </div>
-                        <div style={{width:"30%", marginRight:"40px"}}>
+                        <div className="menulist-photo" >
                             <img className="menu-list-img" src="http://unionagency.one/delice/img/home-1/menu_item_3.jpg" alt="" />
                             <h4>SOUP</h4>
                         </div>
-                        <div style={{width:"30%"}}>
+                        <div className="menulist-photo" >
                             <img className="menu-list-img" src="http://unionagency.one/delice/img/home-1/menu_item_4.jpg" alt="" />
                              <h4>APPETIZER</h4>
                         </div>
@@ -156,7 +156,7 @@ const HomePage = () => {
                     </div>
                     </div>
                     <div className="inner-right-part">
-                        <div style={{display:"flex", marginBottom:"30px"}}>
+                        <div className="inner-inner-right" style={{display:"flex", marginBottom:"30px"}}>
                             <img style={{width:"250px", marginRight:"15px"}} src="http://unionagency.one/delice/img/home-1/about_home_1_img_3.jpg" alt="" />
                              <img style={{width:"250px"}} src="http://unionagency.one/delice/img/home-1/about_home_1_img_4.jpg" alt="" />
                         </div>

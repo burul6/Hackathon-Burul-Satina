@@ -16,7 +16,7 @@
     background-size: 1285px 803.12px;
     transform: translate3d(0px, -70px, 0px);
     height: 550px;
-    background-image: url('http://unionagency.one/delice/img/about/main-baner-bg.jpg');
+    /* background-image: url('http://unionagency.one/delice/img/about/main-baner-bg.jpg'); */
 }
 
 .duis{
@@ -142,6 +142,28 @@
     position: relative;
 }
 
+.gallery-div{
+    margin-bottom: 50px;
+}
+
+.ideas-for-div{
+    width: 50%;
+    text-align: center;
+}
+
+.about-us-photo{
+    width: 214px;
+}
+
+.ideas-for-new{
+    width: 100%;
+    display: flex;
+}
+
+.ideas-for-left{
+    width: 50%;
+}
+
 .third-backparalax-div{
     background-attachment: fixed;
     background-position: center;
@@ -156,3 +178,31 @@
     height: 550px;
     background-size: 1285px 803.12px;
 }
+
+@media only screen and (max-width: 320px){
+    .swiper-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about-us-image{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .twenty-years-div{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .twenty-years-first{
+        width: 100%;
+    }
+    .twenty-years-second{
+        width: 100%;
+    }
+    .about-us-photo{
+        width: 105px;
+    }
+    .ideas-for-new{
+        display: flex;
+        flex-wrap: wrap;
+    }
+} 
