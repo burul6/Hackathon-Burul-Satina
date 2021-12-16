@@ -58,8 +58,7 @@ const ProductList = () => {
       <div className="container" style={{ marginTop: "20px" }}>
         <div
           className="products-search"
-          style={{ display: "flex", justifyContent: "space-between" }}
-        >
+          >
           <div
             style={{ cursor: "pointer" }}
             onClick={() => setShowFilters(!showFilters)}
@@ -95,12 +94,6 @@ const ProductList = () => {
 
         <div
           className="products-list"
-          style={{
-            display: "flex",
-            marginTop: "50px",
-            marginBottom: "50px",
-            justifyContent: "space-around",
-          }}
         >
           {products.length > 0 ? (
             products.map((item) => <ProductCard item={item} />)
@@ -109,7 +102,7 @@ const ProductList = () => {
           )}
         </div>
 
-        <div style={{ display: "flex", justifyContent: "center" }}>
+        <div className="product-pagination" >
           <Pagination
             style={{ marginBottom: "30px" }}
             onChange={(page, limit) => {
