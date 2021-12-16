@@ -97,9 +97,6 @@ const Header = () => {
           </Link>
         ))}
         
-        <div className="hamburger" onClick={handleClick}>
-          {click ? <CloseOutlined style={{color: "black"}}/> : <MenuOutlined style={{color: "black"}}/>}
-        </div>
 
         {user === "taalaybekovasatina@gmail.com" ? (
           <Link
@@ -163,6 +160,9 @@ const Header = () => {
           )}
         </Link>
       </div>
+      <div className="hamburger" onClick={handleClick}>
+          {click ? <CloseOutlined style={{color: "black"}}/> : <MenuOutlined style={{color: "black"}}/>}
+        </div>
     </div>
   );
 };

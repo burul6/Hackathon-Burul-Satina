@@ -23,8 +23,8 @@ const MenuList = () => {
                     </div>
                 </div>
                 <div className='menulist-table'>
-                    <div  style={{color:"white", fontSize:"95px", fontWeight:"550"}}>Our Menu</div>
-                    <div style={{color:"rgba(255,255,255,0.7)", fontSize:"20px", lineHeight:"24px"}}>Duis aute irure dolor in reprehenderit in voluptate velit esse <br /> cillum dolore eu fugiat nulla pariatur.</div>
+                    <div className='ourMenu' >Our Menu</div>
+                    <div className='ourMenu-text'>Duis aute irure dolor in reprehenderit in voluptate velit esse <br /> cillum dolore eu fugiat nulla pariatur.</div>
                 </div>
             </section>
             </Parallaximg>
@@ -36,12 +36,9 @@ const MenuList = () => {
                         <img style={{width:"100%"}} src="http://unionagency.one/delice/img/menu-1/plate-1.jpg" alt="" />
                     </div>
                     <div className='inner-rightpart'>
-                      
-                        <Link to="/shop"><div className='start-the-day'>View All Menu List</div></Link>
                         <Link to='/shop'><div className='breackfast-div'>BREAKFAST MENU</div></Link>
-
-                        <div style={{width:"100%", display:"flex"}}>
-                            <div className='left-breakfast' style={{marginRight:"50px"}}>
+                        <div className='inner-right-productList'>
+                            <div className='left-breakfast' >
                                 <div className='menu-break-item' style={{display:"flex"}}>
                                             <div>
                                                 <div className='menu-main-title'>Breakfast Complete</div>
@@ -111,7 +108,7 @@ const MenuList = () => {
                         <div className='start-the-day'>Get a break with</div>
                         <Link to='/products'><div className='breackfast-div'>LUNCH MENU</div></Link>
                         <div className='big-breakfast-div'>
-                            <div className='left-breakfast' style={{marginRight:"50px"}}>
+                            <div className='left-breakfast'>
                                 <div className='menu-break-item' style={{display:"flex"}}>
                                             <div>
                                                 <div className='menu-main-title'>She Crab Soup</div>
@@ -186,7 +183,7 @@ const MenuList = () => {
                     <div className='inner-rightpart'>
                         <div className='start-the-day'>Relaxing with our</div>
                         <Link to='/products'><div className='breackfast-div'>DINNER MENU</div></Link>
-                        <div style={{width:"100%", display:"flex"}}>
+                        <div  className='big-breakfast-div'>
                             <div className='left-breakfast' style={{marginRight:"50px"}}>
                                 <div className='menu-break-item' style={{display:"flex"}}>
                                             <div>
